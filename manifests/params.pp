@@ -1,7 +1,6 @@
 class tcpwrappers::params {
 
-  $package_name='tcpwrappers'
-  $service_name='tcpwrappers'
+  $package_name='tcp_wrappers'
 
   case $::osfamily
   {
