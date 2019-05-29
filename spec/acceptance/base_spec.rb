@@ -27,9 +27,5 @@ describe 'tcpwrappers class' do
       its(:content) { should match '# puppet managed file' }
     end
 
-    describe package('tcp_wrappers') do
-      it { is_expected.to be_installed }
-    end
-
   end
 end

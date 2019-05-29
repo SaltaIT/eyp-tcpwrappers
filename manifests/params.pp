@@ -1,6 +1,5 @@
 class tcpwrappers::params {
 
-  $package_name='tcp_wrappers'
 
   case $::osfamily
   {
@@ -10,6 +9,7 @@ class tcpwrappers::params {
       {
         /^[5-8].*$/:
         {
+          $package_name='tcp_wrappers'
         }
         default: { fail("Unsupported RHEL/CentOS version! - ${::operatingsystemrelease}")  }
       }
@@ -24,6 +24,7 @@ class tcpwrappers::params {
           {
             /^1[468].*$/:
             {
+              $package_name='tcp-wrappers'
             }
             default: { fail("Unsupported Ubuntu version! - ${::operatingsystemrelease}")  }
           }
