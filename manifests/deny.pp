@@ -10,5 +10,4 @@ define tcpwrappers::deny(
     order   => $order,
     content => template("${module_name}/entry.erb"),
   }
-
 }
