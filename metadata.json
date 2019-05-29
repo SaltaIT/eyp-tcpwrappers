@@ -2,7 +2,7 @@
   "name": "eyp-tcpwrappers",
   "version": "0.1.1",
   "author": "eyp",
-  "summary": null,
+  "summary": "tcpwrappers management",
   "license": "Apache-2.0",
   "source": "https://github.com/NTTCom-MS/eyp-tcpwrappers",
   "project_page": "https://github.com/NTTCom-MS/eyp-tcpwrappers",
