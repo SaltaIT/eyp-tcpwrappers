@@ -16,22 +16,23 @@ class tcpwrappers::params {
     }
     'Debian':
     {
-      case $::operatingsystem
-      {
-        'Ubuntu':
-        {
-          case $::operatingsystemrelease
-          {
-            /^1[468].*$/:
-            {
-              $package_name='ucspi-tcp'
-            }
-            default: { fail("Unsupported Ubuntu version! - ${::operatingsystemrelease}")  }
-          }
-        }
-        'Debian': { fail('Unsupported')  }
-        default: { fail('Unsupported Debian flavour!')  }
-      }
+      # case $::operatingsystem
+      # {
+      #   'Ubuntu':
+      #   {
+      #     case $::operatingsystemrelease
+      #     {
+      #       /^1[468].*$/:
+      #       {
+      #         $package_name='ucspi-tcp'
+      #       }
+      #       default: { fail("Unsupported Ubuntu version! - ${::operatingsystemrelease}")  }
+      #     }
+      #   }
+      #   'Debian': { fail('Unsupported')  }
+      #   default: { fail('Unsupported Debian flavour!')  }
+      # }
+      fail('Unsupported')
     }
     default: { fail('Unsupported OS!')  }
   }
