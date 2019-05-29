@@ -4,8 +4,6 @@ define tcpwrappers::allow(
                             $description = $name,
                             $order       = '42',
                           ) {
-  validate_array($daemons)
-  validate_array($clients)
 
   concat::fragment{ "/etc/hosts.allow ${description}":
     target  => '/etc/hosts.allow',

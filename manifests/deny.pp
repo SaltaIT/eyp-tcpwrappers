@@ -4,8 +4,6 @@ define tcpwrappers::deny(
                           $description = $name,
                           $order       = '42',
                         ) {
-  validate_array($daemons)
-  validate_array($clients)
 
   concat::fragment{ "/etc/hosts.deny ${description}":
     target  => '/etc/hosts.deny',
