@@ -24,7 +24,7 @@ class tcpwrappers::params {
           {
             /^1[468].*$/:
             {
-              $package_name='tcp-wrappers'
+              $package_name='ucspi-tcp'
             }
             default: { fail("Unsupported Ubuntu version! - ${::operatingsystemrelease}")  }
           }
