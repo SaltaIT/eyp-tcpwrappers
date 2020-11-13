@@ -1,7 +1,7 @@
 {
   "name": "eyp-tcpwrappers",
   "version": "0.1.1",
-  "author": "eyp",
+  "author": "Jordi Prats",
   "summary": "tcpwrappers management",
   "license": "Apache-2.0",
   "source": "https://github.com/SaltaIT/eyp-tcpwrappers",
